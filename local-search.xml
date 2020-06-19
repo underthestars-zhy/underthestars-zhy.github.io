@@ -3,5 +3,18 @@
   
   
   
+  <entry>
+    <title>Upic-weibo</title>
+    <link href="/2020/06/19/Upic-weibo/"/>
+    <url>/2020/06/19/Upic-weibo/</url>
+    
+    <content type="html"><![CDATA[<hr><p>title:Upic-weibo<br>tags:图床<br>categories:软件<br>index_img:<a href="https://cdn.jsdelivr.net/gh/underthestars-zhy/uPic@master/uPic/图片67.jpg" target="_blank" rel="noopener">https://cdn.jsdelivr.net/gh/underthestars-zhy/uPic@master/uPic/图片67.jpg</a><br>banner_img:<a href="https://cdn.jsdelivr.net/gh/underthestars-zhy/uPic@master/uPic/图片67.jpg" target="_blank" rel="noopener">https://cdn.jsdelivr.net/gh/underthestars-zhy/uPic@master/uPic/图片67.jpg</a><br>date:2020-06-19 20:30:00</p><hr><p>以下是文章内容</p><h1 id="Upic-配置微博图床"><a href="#Upic-配置微博图床" class="headerlink" title="Upic 配置微博图床"></a>Upic 配置微博图床</h1><blockquote><p>Upic官方的配置说明有些问题，这里进行一些修改。</p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/underthestars-zhy/uPic@master/uPic/Xnip2020-06-19_20-26-07.png" srcset="/img/loading.gif" alt=""></p><ol><li>在配置界面输入用户名与密码（<strong>不要勾选Cookie模式</strong>）</li><li>在域名输入<strong><a href="https://wx4.sinaimg.cn" target="_blank" rel="noopener">https://wx4.sinaimg.cn</a></strong></li></ol><p><em>注意</em>：如果发现无法上传将域名上学wx4中的4+1，后续以此类推</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
   
 </search>
