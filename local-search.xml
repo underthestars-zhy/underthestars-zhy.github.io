@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>MacWon&#39;tTurnOn</title>
+    <link href="/2020/07/20/MacWon&#39;tTurnOn/"/>
+    <url>/2020/07/20/MacWon&#39;tTurnOn/</url>
+    
+    <content type="html"><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><hr><p>title: Mac无法开机<br>tags: Mac<br>categories: 教程<br>index_img: <a href="https://support.apple.com/content/dam/edam/applecare/images/en_US/homepage/hero-banner-homepage.image.large_2x.jpg" target="_blank" rel="noopener">https://support.apple.com/content/dam/edam/applecare/images/en_US/homepage/hero-banner-homepage.image.large_2x.jpg</a><br>banner_img: <a href="https://support.apple.com/content/dam/edam/applecare/images/en_US/homepage/hero-banner-homepage.image.large_2x.jpg" target="_blank" rel="noopener">https://support.apple.com/content/dam/edam/applecare/images/en_US/homepage/hero-banner-homepage.image.large_2x.jpg</a><br>date: 2020-07-20 08:27:00</p><hr><h1 id="Mac无法开机"><a href="#Mac无法开机" class="headerlink" title="Mac无法开机"></a>Mac无法开机</h1><p>今天早上起来，发现Mac无法开机，吓死我了。</p><a id="more"></a><!--more--><!--more--><p>于是我baidu.com了一下，首先切断电源<strong>1分钟</strong>，然后按下开机键<strong>10秒</strong>后，再按<strong>一下</strong>开机键。操作完后接上电源，<a href="https://support.apple.com/zh-cn/HT201295" target="_blank" rel="noopener">重置系统管理控制器 (SMC)</a>：</p><blockquote><ol><li>将 Mac 关机。</li><li>在内建键盘上，按住以下所有按键。Mac 可能会开机。<ul><li>键盘左侧的 <strong>Control</strong> </li><li>键盘左侧的 <strong>Option</strong> (Alt) </li><li>键盘右侧的 <strong>Shift</strong> </li></ul></li><li>按住<strong>全部三个按键</strong> 7 秒钟，然后在不松开按键的情况下按住<strong>电源按钮</strong>。如果 Mac 处于开机状态，它将在您按住这些按键时关机。</li></ol></blockquote><p>再按一下开机键，完美解决。</p><p>估计昨天运行了多个大型应用程序，导致SMC崩溃了。</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Typecho从0开始</title>
     <link href="/2020/06/27/Typecho%E4%BB%8E0%E5%BC%80%E5%A7%8B/"/>
     <url>/2020/06/27/Typecho%E4%BB%8E0%E5%BC%80%E5%A7%8B/</url>
@@ -54,31 +67,6 @@
   
   
   <entry>
-    <title>Upic微博图床配置</title>
-    <link href="/2020/06/19/Upic-weibo/"/>
-    <url>/2020/06/19/Upic-weibo/</url>
-    
-    <content type="html"><![CDATA[<p>使用Upic 配置微博图床</p><a id="more"></a><h1 id="Upic-配置微博图床"><a href="#Upic-配置微博图床" class="headerlink" title="Upic 配置微博图床"></a>Upic 配置微博图床</h1><blockquote><p>Upic官方的配置说明有些问题，这里进行一些修改。</p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/underthestars-zhy/uPic@master/uPic/Xnip2020-06-19_20-26-07.png" srcset="/img/loading.gif" alt=""></p><ol><li>在配置界面输入用户名与密码（<strong>不要勾选Cookie模式</strong>）</li><li>在域名输入<strong><a href="https://wx4.sinaimg.cn" target="_blank" rel="noopener">https://wx4.sinaimg.cn</a></strong></li></ol><p><em>注意</em>：如果发现无法上传将域名上学wx4中的4+1，后续以此类推</p>]]></content>
-    
-    
-    <categories>
-      
-      <category>软件</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>图床</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>Typecho后台美化</title>
     <link href="/2020/06/19/Typecho-admin/"/>
     <url>/2020/06/19/Typecho-admin/</url>
@@ -96,6 +84,31 @@
     <tags>
       
       <tag>typecho</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Upic微博图床配置</title>
+    <link href="/2020/06/19/Upic-weibo/"/>
+    <url>/2020/06/19/Upic-weibo/</url>
+    
+    <content type="html"><![CDATA[<p>使用Upic 配置微博图床</p><a id="more"></a><h1 id="Upic-配置微博图床"><a href="#Upic-配置微博图床" class="headerlink" title="Upic 配置微博图床"></a>Upic 配置微博图床</h1><blockquote><p>Upic官方的配置说明有些问题，这里进行一些修改。</p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/underthestars-zhy/uPic@master/uPic/Xnip2020-06-19_20-26-07.png" srcset="/img/loading.gif" alt=""></p><ol><li>在配置界面输入用户名与密码（<strong>不要勾选Cookie模式</strong>）</li><li>在域名输入<strong><a href="https://wx4.sinaimg.cn" target="_blank" rel="noopener">https://wx4.sinaimg.cn</a></strong></li></ol><p><em>注意</em>：如果发现无法上传将域名上学wx4中的4+1，后续以此类推</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>软件</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>图床</tag>
       
     </tags>
     
