@@ -4,13 +4,25 @@
   
   
   <entry>
-    <title>MacWon&#39;tTurnOn</title>
+    <title>Mac无法开机</title>
     <link href="/2020/07/20/MacWon&#39;tTurnOn/"/>
     <url>/2020/07/20/MacWon&#39;tTurnOn/</url>
     
-    <content type="html"><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><hr><p>title: Mac无法开机<br>tags: Mac<br>categories: 教程<br>index_img: <a href="https://gitee.com/public_number_13516875622/oss/raw/master/uPic/hero-banner-homepage.image.large_2x.jpg" target="_blank" rel="noopener">https://gitee.com/public_number_13516875622/oss/raw/master/uPic/hero-banner-homepage.image.large_2x.jpg</a><br>banner_img: <a href="https://gitee.com/public_number_13516875622/oss/raw/master/uPic/hero-banner-homepage.image.large_2x.jpg" target="_blank" rel="noopener">https://gitee.com/public_number_13516875622/oss/raw/master/uPic/hero-banner-homepage.image.large_2x.jpg</a><br>date: 2020-07-20 08:27:00</p><hr><h1 id="Mac无法开机"><a href="#Mac无法开机" class="headerlink" title="Mac无法开机"></a>Mac无法开机</h1><p>今天早上起来，发现Mac无法开机，吓死我了。</p><a id="more"></a><!--more--><!--more--><p>于是我baidu.com了一下，首先切断电源<strong>1分钟</strong>，然后按下开机键<strong>10秒</strong>后，再按<strong>一下</strong>开机键。操作完后接上电源，<a href="https://support.apple.com/zh-cn/HT201295" target="_blank" rel="noopener">重置系统管理控制器 (SMC)</a>：</p><blockquote><ol><li>将 Mac 关机。</li><li>在内建键盘上，按住以下所有按键。Mac 可能会开机。<ul><li>键盘左侧的 <strong>Control</strong> </li><li>键盘左侧的 <strong>Option</strong> (Alt) </li><li>键盘右侧的 <strong>Shift</strong> </li></ul></li><li>按住<strong>全部三个按键</strong> 7 秒钟，然后在不松开按键的情况下按住<strong>电源按钮</strong>。如果 Mac 处于开机状态，它将在您按住这些按键时关机。</li></ol></blockquote><p>再按一下开机键，完美解决。</p><p>估计昨天运行了多个大型应用程序，导致SMC崩溃了。</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="Mac无法开机"><a href="#Mac无法开机" class="headerlink" title="Mac无法开机"></a>Mac无法开机</h1><p>今天早上起来，发现Mac无法开机，吓死我了。</p><a id="more"></a><!--more--><!--more--><p>于是我baidu.com了一下，首先切断电源<strong>1分钟</strong>，然后按下开机键<strong>10秒</strong>后，再按<strong>一下</strong>开机键。操作完后接上电源，<a href="https://support.apple.com/zh-cn/HT201295" target="_blank" rel="noopener">重置系统管理控制器 (SMC)</a>：</p><blockquote><ol><li>将 Mac 关机。</li><li>在内建键盘上，按住以下所有按键。Mac 可能会开机。<ul><li>键盘左侧的 <strong>Control</strong> </li><li>键盘左侧的 <strong>Option</strong> (Alt) </li><li>键盘右侧的 <strong>Shift</strong> </li></ul></li><li>按住<strong>全部三个按键</strong> 7 秒钟，然后在不松开按键的情况下按住<strong>电源按钮</strong>。如果 Mac 处于开机状态，它将在您按住这些按键时关机。</li></ol></blockquote><p>再按一下开机键，完美解决。</p><p>估计昨天运行了多个大型应用程序，导致SMC崩溃了。</p>]]></content>
     
     
+    <categories>
+      
+      <category>教程</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Mac</tag>
+      
+    </tags>
     
   </entry>
   
