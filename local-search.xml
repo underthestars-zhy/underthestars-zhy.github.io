@@ -79,31 +79,6 @@
   
   
   <entry>
-    <title>Typecho后台美化</title>
-    <link href="/2020/06/19/Typecho-admin/"/>
-    <url>/2020/06/19/Typecho-admin/</url>
-    
-    <content type="html"><![CDATA[<h1 id="Typecho后台美化"><a href="#Typecho后台美化" class="headerlink" title="Typecho后台美化"></a>Typecho后台美化</h1><p>这次将介绍如何美化Typecho后台界面，非常简单。</p><a id="more"></a><!--more--><!--more--><!--more--><!--more--><h2 id="为何美化"><a href="#为何美化" class="headerlink" title="为何美化"></a>为何美化</h2><p>Typecho自带的后台实在是太丑了，而且看起来非常不方便。</p><p>所以<strong>特地美化一下</strong></p><h2 id="备份"><a href="#备份" class="headerlink" title="备份"></a>备份</h2><p>为了防止<strong>不可预计的后果</strong>，所以先提前备份一下。</p><ol><li><p>打开博客根目录</p></li><li><p>找到<strong>admin</strong>文件夹</p></li><li><p>压缩此文件夹</p></li><li><p>下载压缩后的文件夹</p></li></ol><h2 id="替换"><a href="#替换" class="headerlink" title="替换"></a>替换</h2><p>首先下载<strong>美化后的admin文件</strong></p><blockquote><p><a href="https://od.uts.ski/admin.tar.gz" target="_blank" rel="noopener">下载</a></p></blockquote><p>然后上传到服务器。</p><p>删除原来的admin文件，解压这个，<strong>替换</strong>。</p><p>再下载授权文件</p><blockquote><p><a href="https://od.uts.ski/Menu.php" target="_blank" rel="noopener">下载</a></p></blockquote><p>上传到<strong>var/Widget</strong>下</p><p><strong>然后一切OK</strong>登陆后台看一下，有没有数据丢失即可。</p>]]></content>
-    
-    
-    <categories>
-      
-      <category>教程</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>typecho</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>Upic微博图床配置</title>
     <link href="/2020/06/19/Upic-weibo/"/>
     <url>/2020/06/19/Upic-weibo/</url>
@@ -121,6 +96,31 @@
     <tags>
       
       <tag>图床</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Typecho后台美化</title>
+    <link href="/2020/06/19/Typecho-admin/"/>
+    <url>/2020/06/19/Typecho-admin/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Typecho后台美化"><a href="#Typecho后台美化" class="headerlink" title="Typecho后台美化"></a>Typecho后台美化</h1><p>这次将介绍如何美化Typecho后台界面，非常简单。</p><a id="more"></a><!--more--><!--more--><!--more--><!--more--><h2 id="为何美化"><a href="#为何美化" class="headerlink" title="为何美化"></a>为何美化</h2><p>Typecho自带的后台实在是太丑了，而且看起来非常不方便。</p><p>所以<strong>特地美化一下</strong></p><h2 id="备份"><a href="#备份" class="headerlink" title="备份"></a>备份</h2><p>为了防止<strong>不可预计的后果</strong>，所以先提前备份一下。</p><ol><li><p>打开博客根目录</p></li><li><p>找到<strong>admin</strong>文件夹</p></li><li><p>压缩此文件夹</p></li><li><p>下载压缩后的文件夹</p></li></ol><h2 id="替换"><a href="#替换" class="headerlink" title="替换"></a>替换</h2><p>首先下载<strong>美化后的admin文件</strong></p><blockquote><p><a href="https://od.uts.ski/admin.tar.gz" target="_blank" rel="noopener">下载</a></p></blockquote><p>然后上传到服务器。</p><p>删除原来的admin文件，解压这个，<strong>替换</strong>。</p><p>再下载授权文件</p><blockquote><p><a href="https://od.uts.ski/Menu.php" target="_blank" rel="noopener">下载</a></p></blockquote><p>上传到<strong>var/Widget</strong>下</p><p><strong>然后一切OK</strong>登陆后台看一下，有没有数据丢失即可。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>教程</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>typecho</tag>
       
     </tags>
     
