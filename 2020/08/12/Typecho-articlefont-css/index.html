@@ -19,7 +19,7 @@
   <meta name="description" content="">
   <meta name="author" content="zhy">
   <meta name="keywords" content="">
-  <title>Typecho修改文章字体 - UTS</title>
+  <title>Typecho文章自定义字体CSS - UTS</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
@@ -153,7 +153,7 @@
 </nav>
 
     <div class="view intro-2" id="background" parallax=true
-         style="background: url('https://cdn.jsdelivr.net/gh/GitPic-1739801/PicUP@master/uPic/PicApi2020-08-11%20下午1.25.17%20154.png') no-repeat center center;
+         style="background: url('https://cdn.jsdelivr.net/gh/GitPic-1739801/PicUP@master/uPic/PicApi2020-08-11%20下午1.25.17%20153.png') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
@@ -166,8 +166,8 @@
               
   <div class="mt-3 post-meta">
     <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-    <time datetime="2020-08-12 11:30">
-      2020年8月12日 中午
+    <time datetime="2020-08-12 12:54">
+      2020年8月12日 下午
     </time>
   </div>
 
@@ -177,7 +177,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      285 字
+      929 字
     </span>
   
 
@@ -187,7 +187,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      3
+      11
        分钟
     </span>
   
@@ -226,33 +226,89 @@
           <div class="post-content mx-auto" id="post">
             
             <article class="markdown-body">
-              <h1 id="HTML修改文字字体"><a href="#HTML修改文字字体" class="headerlink" title="HTML修改文字字体"></a>HTML修改文字字体</h1><p>html里修改文字字体的方式有好多种</p>
-<p>例如使用css，或者使用<font>标签。</p>
-<blockquote>
-<p>font在html5里不建议使用。</p>
-</blockquote>
-<p>但是，我还是要介绍一下如何使用<font>来修改字体</p>
-<div class="hljs"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">face</span>=<span class="hljs-string">"FONT"</span>&gt;</span>WORD<span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span></code></pre></div>
+              <h1 id="CSS代码"><a href="#CSS代码" class="headerlink" title="CSS代码"></a>CSS代码</h1><p>在<strong>后台——外观设置——自定义CSS</strong>中填入以下代码</p>
+<div class="hljs"><pre><code class="hljs css"><span class="hljs-keyword">@font-face</span>&#123;
+			<span class="hljs-attribute">font-family</span>: <span class="hljs-string">'FZZ'</span>;
+			<span class="hljs-attribute">src</span>:<span class="hljs-built_in">url</span>(<span class="hljs-string">'https://cdn.jsdelivr.net/gh/s-cloud-bk/Upic@master/uPic/字魂162号-元气酪酪体.ttf'</span>);
+		&#125;
 
-<p>其中，FONT是字体名称，可以是<strong>中文或者英文</strong>，WORD是<strong>文字</strong></p>
-<p>但是为了防止用户浏览器没有FONT指定字体，所以我们可以同时调用<strong>多个字体</strong></p>
-<div class="hljs"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">face</span>=<span class="hljs-string">"FONT1,FONT2,FONT3,..."</span>&gt;</span>WORD<span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span></code></pre></div>
+<span class="hljs-selector-class">.box</span>&#123;
+	<span class="hljs-attribute">font-family</span>: <span class="hljs-string">'FZZ'</span>;
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">30px</span>;
+&#125;</code></pre></div>
 
-<p>当运行这段代码，浏览器<strong>首先调用FONT1</strong>，如果有则显示，没有则<strong>调用FONT2</strong>以此类推</p>
-<h1 id="文章自定义字体"><a href="#文章自定义字体" class="headerlink" title="文章自定义字体"></a>文章自定义字体</h1><p>我们同样可以通过<strong>html</strong>代码来自定义文章字体</p>
+<p>其中，src部分的url可以换为你想要的字体，FZZ可以替换，但是保证<strong>上下名称一样</strong>，box也可以换，等会调用的时候需要<strong>一起替换</strong></p>
+<h1 id="文章代码"><a href="#文章代码" class="headerlink" title="文章代码"></a>文章代码</h1><p>在文章输入</p>
 <div class="hljs"><pre><code class="hljs html">!!!
-<span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">face</span>=<span class="hljs-string">"FONT1,FONT2,FONT3,..."</span>&gt;</span>WORD<span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span>
-!!!
-
-!!!
-<span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">face</span>=<span class="hljs-string">"FONT1,FONT2,FONT3,..."</span>&gt;</span>WORD<span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">align</span>=<span class="hljs-string">"center"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box"</span>&gt;</span>
+有人在大山里起舞<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+有人在菜地里高歌<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+有人潜入最深的海底<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+有人登上最高的山峰<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+很多人不知道<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+漠河冬天开水泼出能成雾霜<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+很多人不知道<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+乌苏里江大马哈鱼有多香<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+很多人不知道<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+新疆哈密瓜地里的姑娘有多漂亮<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+很多人不知道<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+曾母暗沙海底有无数宝藏<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+很多人，一生只在一个地方<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+有人说带着偏见看世界，才有看待世界的方式<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+可看待世界，不需要预设任何方式<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+野花山间无畏盛开，悄无声息<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+如果它拥有被看见的权利<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+它也能收获遥远他乡的喜欢<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+存在即是完美<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+人与人之间的相互理解、包容、认同<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+非一日之功，亦非一己之力<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+可技术的进步给更多人提供了<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+看见的可能<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+那些原来沉默的大多数<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+就可以不沉默<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+那些原来普通的人<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+就可以不普通<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+那些原本平凡的东西<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+就不再平凡<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+这，就是看见的力量<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+向更大的世界开始探索吧<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+去体验，去感受，去交流，去求证<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+看看古老手艺如何惊艳时光<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+看看翩翩少年如何奋发图强<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+看看耄耋老人如何白头偕老<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+看看芸芸众生如何逆风飞翔<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+向所有认真生活的人喊一句<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+老铁，没毛病！<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+我们是世间的尘埃<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+却是自己的英雄！<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+不要冷漠的走入普通人<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+每个人都在追求自己的幸福<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+痛苦的人<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+总是携带傲慢与偏见<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+幸福的人<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+总是多一份宽容与慈悲<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+不必盼望世界先理解你<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+你可以尝试先理解世界<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+君子和而不同<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+穷则独善其身<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+达则兼济天下<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+更广阔的胸襟<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+装得下更多的趣味、态度和观点<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+参差百态<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+才是幸福之源<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+不要冷漠地走入任何未经检验的生活<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+要相信生活值得一过<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+只要你热爱它<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+如果非要对生活有态度<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+加油！奥利给！<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+你比你想象中<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+更美好<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 !!!</code></pre></div>
 
-<p>我们把这段HTML代码包含在!!!中，然后在文章编辑器里书写即可</p>
-<p>你还可以在这段代码上下使用MD书写</p>
-<blockquote>
-<p>同理，!!!还可以包含其他html代码，支持html4和5，但是这里好似只能用4的代码了<del>(&gt;_&lt;)</del></p>
-</blockquote>
+<p>其中，div标签可以省略，这个用来<strong>文字对其</strong>，p标签通过<strong>class</strong>引用css代码，注意此处名称需要和css一样，p标签内文字可以替换掉。</p>
 
             </article>
             <hr>
@@ -262,7 +318,7 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
+                      <a class="hover-with-bg" href="/categories/CSS/">CSS</a>
                     
                   </div>
                 
@@ -283,18 +339,12 @@
                   <div class="post-prev col-6">
                     
                     
-                      <a href="/2020/08/12/Typecho-articlefont-css/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Typecho文章自定义字体CSS</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </div>
                   <div class="post-next col-6">
                     
                     
-                      <a href="/2020/07/20/MacWon&#39;tTurnOn/">
-                        <span class="hidden-mobile">Mac无法开机</span>
+                      <a href="/2020/08/12/Typecho-articlefont/">
+                        <span class="hidden-mobile">Typecho修改文章字体</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -491,7 +541,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "Typecho修改文章字体&nbsp;",
+        "Typecho文章自定义字体CSS&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,

@@ -19,19 +19,10 @@
   <meta name="description" content="">
   <meta name="author" content="zhy">
   <meta name="keywords" content="">
-  <title>Typecho修改文章字体 - UTS</title>
+  <title>分类 - CSS - UTS</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
-
-  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
-  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
-
-  
-    <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
-  
-
-  
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
@@ -53,7 +44,7 @@
 
 
 <body>
-  <header style="height: 70vh;">
+  <header style="height: 60vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -153,7 +144,7 @@
 </nav>
 
     <div class="view intro-2" id="background" parallax=true
-         style="background: url('https://cdn.jsdelivr.net/gh/GitPic-1739801/PicUP@master/uPic/PicApi2020-08-11%20下午1.25.17%20154.png') no-repeat center center;
+         style="background: url('/img/category.jpg') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
@@ -161,48 +152,6 @@
             <span class="h2" id="subtitle">
               
             </span>
-
-            
-              
-  <div class="mt-3 post-meta">
-    <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-    <time datetime="2020-08-12 11:30">
-      2020年8月12日 中午
-    </time>
-  </div>
-
-
-<div class="mt-1">
-  
-    
-    <span class="post-meta mr-2">
-      <i class="iconfont icon-chart"></i>
-      285 字
-    </span>
-  
-
-  
-    
-    <span class="post-meta mr-2">
-      <i class="iconfont icon-clock-fill"></i>
-      
-      
-      3
-       分钟
-    </span>
-  
-
-  
-  
-    
-      <!-- 不蒜子统计文章PV -->
-      <span id="busuanzi_container_page_pv" style="display: none">
-        <i class="iconfont icon-eye" aria-hidden="true"></i>
-        <span id="busuanzi_value_page_pv"></span> 次
-      </span>
-    
-  
-</div>
 
             
           </div>
@@ -215,147 +164,37 @@
 
   <main>
     
+      <div class="container nopadding-md">
+        <div class="py-5" id="board"
+          >
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+<div class="list-group">
+  <p class="h4">共计 1 篇文章</p>
+  <hr>
+  
+    
       
+      <p class="h5">2020</p>
+    
+    <a href="/2020/08/12/Typecho-articlefont-css/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">Typecho文章自定义字体CSS</span>
+      <span style="float: right;">08-12</span>
+    </a>
+  
+</div>
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="d-none d-lg-block col-lg-2"></div>
-    <div class="col-lg-8 nopadding-md">
-      <div class="container nopadding-md" id="board-ctn">
-        <div class="py-5" id="board">
-          <div class="post-content mx-auto" id="post">
-            
-            <article class="markdown-body">
-              <h1 id="HTML修改文字字体"><a href="#HTML修改文字字体" class="headerlink" title="HTML修改文字字体"></a>HTML修改文字字体</h1><p>html里修改文字字体的方式有好多种</p>
-<p>例如使用css，或者使用<font>标签。</p>
-<blockquote>
-<p>font在html5里不建议使用。</p>
-</blockquote>
-<p>但是，我还是要介绍一下如何使用<font>来修改字体</p>
-<div class="hljs"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">face</span>=<span class="hljs-string">"FONT"</span>&gt;</span>WORD<span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span></code></pre></div>
 
-<p>其中，FONT是字体名称，可以是<strong>中文或者英文</strong>，WORD是<strong>文字</strong></p>
-<p>但是为了防止用户浏览器没有FONT指定字体，所以我们可以同时调用<strong>多个字体</strong></p>
-<div class="hljs"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">face</span>=<span class="hljs-string">"FONT1,FONT2,FONT3,..."</span>&gt;</span>WORD<span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span></code></pre></div>
 
-<p>当运行这段代码，浏览器<strong>首先调用FONT1</strong>，如果有则显示，没有则<strong>调用FONT2</strong>以此类推</p>
-<h1 id="文章自定义字体"><a href="#文章自定义字体" class="headerlink" title="文章自定义字体"></a>文章自定义字体</h1><p>我们同样可以通过<strong>html</strong>代码来自定义文章字体</p>
-<div class="hljs"><pre><code class="hljs html">!!!
-<span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">face</span>=<span class="hljs-string">"FONT1,FONT2,FONT3,..."</span>&gt;</span>WORD<span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span>
-!!!
-
-!!!
-<span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">face</span>=<span class="hljs-string">"FONT1,FONT2,FONT3,..."</span>&gt;</span>WORD<span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span>
-!!!</code></pre></div>
-
-<p>我们把这段HTML代码包含在!!!中，然后在文章编辑器里书写即可</p>
-<p>你还可以在这段代码上下使用MD书写</p>
-<blockquote>
-<p>同理，!!!还可以包含其他html代码，支持html4和5，但是这里好似只能用4的代码了<del>(&gt;_&lt;)</del></p>
-</blockquote>
-
-            </article>
-            <hr>
-            <div>
-              <div class="post-metas mb-3">
-                
-                  <div class="post-meta mr-3">
-                    <i class="iconfont icon-category"></i>
-                    
-                      <a class="hover-with-bg" href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
-                    
-                  </div>
-                
-                
-                  <div class="post-meta">
-                    <i class="iconfont icon-tags"></i>
-                    
-                      <a class="hover-with-bg" href="/tags/typecho/">typecho</a>
-                    
-                  </div>
-                
               </div>
-              
-                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
-              
-              
-                <div class="post-prevnext row">
-                  <div class="post-prev col-6">
-                    
-                    
-                      <a href="/2020/08/12/Typecho-articlefont-css/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Typecho文章自定义字体CSS</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
-                  </div>
-                  <div class="post-next col-6">
-                    
-                    
-                      <a href="/2020/07/20/MacWon&#39;tTurnOn/">
-                        <span class="hidden-mobile">Mac无法开机</span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
-                    
-                  </div>
-                </div>
-              
             </div>
-
-            
-              <!-- Comments -->
-              <div class="comments" id="comments">
-                
-                
-  <div id="vcomments"></div>
-  <script type="text/javascript">
-    function loadValine() {
-      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
-        new Valine({
-          el: "#vcomments",
-          app_id: "u1cKmJopiMDcV27ug9DHFKfe-gzGzoHsz",
-          app_key: "5nRkBaOrTUyxRDGEQLD1kS0n",
-          placeholder: "说点什么",
-          path: window.location.pathname,
-          avatar: "retro",
-          meta: ["nick","mail","link"],
-          pageSize: "10",
-          lang: "zh-CN",
-          highlight: true,
-          recordIP: true,
-          serverURLs: "https://u1ckmjop.lc-cn-n1-shared.com",
-        });
-      });
-    }
-    createObserver(loadValine, 'vcomments');
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="https://valine.js.org" target="_blank" rel="nofollow noopener noopener">comments
-      powered by Valine.</a></noscript>
-
-
-              </div>
-            
           </div>
         </div>
       </div>
-    </div>
-    
-      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
-        <div id="toc">
-  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
-  <div id="tocbot"></div>
-</div>
-
-      </div>
-    
-  </div>
-</div>
-
-<!-- Custom -->
-
-
     
   </main>
 
@@ -459,31 +298,6 @@
 
 
 
-  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
-  <script>
-    $(document).ready(function () {
-      var boardCtn = $('#board-ctn');
-      var boardTop = boardCtn.offset().top;
-
-      tocbot.init({
-        tocSelector: '#tocbot',
-        contentSelector: 'article.markdown-body',
-        headingSelector: 'h1,h2,h3,h4,h5,h6',
-        linkClass: 'tocbot-link',
-        activeLinkClass: 'tocbot-active-link',
-        listClass: 'tocbot-list',
-        isCollapsedClass: 'tocbot-is-collapsed',
-        collapsibleClass: 'tocbot-is-collapsible',
-        collapseDepth: 0,
-        scrollSmooth: true,
-        headingsOffset: -boardTop
-      });
-      if ($('.toc-list-item').length > 0) {
-        $('#toc').css('visibility', 'visible');
-      }
-    });
-  </script>
-
 
 
   <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
@@ -491,7 +305,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "Typecho修改文章字体&nbsp;",
+        "分类 - CSS&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
@@ -506,21 +320,6 @@
 
 
 
-  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
-  <script>
-    anchors.options = {
-      placement: "right",
-      visible: "hover",
-      
-    };
-    var el = "h1,h2,h3,h4,h5,h6".split(",");
-    var res = [];
-    for (item of el) {
-      res.push(".markdown-body > " + item)
-    }
-    anchors.add(res.join(", "))
-  </script>
-
 
 
   <script  src="/js/local-search.js" ></script>
@@ -534,20 +333,6 @@
   </script>
 
 
-
-  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
-  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
-
-  <script>
-    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
-      function () {
-        var element = document.createElement('a');
-        $(element).attr('data-fancybox', 'images');
-        $(element).attr('href', $(this).attr('src'));
-        $(this).wrap(element);
-      }
-    );
-  </script>
 
 
 
