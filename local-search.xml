@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>Typecho修改文章字体</title>
+    <link href="/2020/08/12/Typecho-articlefont/"/>
+    <url>/2020/08/12/Typecho-articlefont/</url>
+    
+    <content type="html"><![CDATA[<h1 id="HTML修改文字字体"><a href="#HTML修改文字字体" class="headerlink" title="HTML修改文字字体"></a>HTML修改文字字体</h1><p>html里修改文字字体的方式有好多种</p><p>例如使用css，或者使用<font>标签。</p><blockquote><p>font在html5里不建议使用。</p></blockquote><p>但是，我还是要介绍一下如何使用<font>来修改字体</p><div class="hljs"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">face</span>=<span class="hljs-string">"FONT"</span>&gt;</span>WORD<span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span></code></pre></div><p>其中，FONT是字体名称，可以是<strong>中文或者英文</strong>，WORD是<strong>文字</strong></p><p>但是为了防止用户浏览器没有FONT指定字体，所以我们可以同时调用<strong>多个字体</strong></p><div class="hljs"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">face</span>=<span class="hljs-string">"FONT1,FONT2,FONT3,..."</span>&gt;</span>WORD<span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span></code></pre></div><p>当运行这段代码，浏览器<strong>首先调用FONT1</strong>，如果有则显示，没有则<strong>调用FONT2</strong>以此类推</p><h1 id="文章自定义字体"><a href="#文章自定义字体" class="headerlink" title="文章自定义字体"></a>文章自定义字体</h1><p>我们同样可以通过<strong>html</strong>代码来自定义文章字体</p><div class="hljs"><pre><code class="hljs html">!!!<span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">face</span>=<span class="hljs-string">"FONT1,FONT2,FONT3,..."</span>&gt;</span>WORD<span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span>!!!!!!<span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">face</span>=<span class="hljs-string">"FONT1,FONT2,FONT3,..."</span>&gt;</span>WORD<span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span>!!!</code></pre></div><p>我们把这段HTML代码包含在!!!中，然后在文章编辑器里书写即可</p><p>你还可以在这段代码上下使用MD书写</p><blockquote><p>同理，!!!还可以包含其他html代码，支持html4和5，但是这里好似只能用4的代码了<del>(&gt;_&lt;)</del></p></blockquote>]]></content>
+    
+    
+    <categories>
+      
+      <category>教程</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>typecho</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Mac无法开机</title>
     <link href="/2020/07/20/MacWon&#39;tTurnOn/"/>
     <url>/2020/07/20/MacWon&#39;tTurnOn/</url>
@@ -79,31 +104,6 @@
   
   
   <entry>
-    <title>Upic微博图床配置</title>
-    <link href="/2020/06/19/Upic-weibo/"/>
-    <url>/2020/06/19/Upic-weibo/</url>
-    
-    <content type="html"><![CDATA[<p>使用Upic 配置微博图床</p><a id="more"></a><h1 id="Upic-配置微博图床"><a href="#Upic-配置微博图床" class="headerlink" title="Upic 配置微博图床"></a>Upic 配置微博图床</h1><blockquote><p>Upic官方的配置说明有些问题，这里进行一些修改。</p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/underthestars-zhy/uPic@master/uPic/Xnip2020-06-19_20-26-07.png" srcset="/img/loading.gif" alt=""></p><ol><li>在配置界面输入用户名与密码（<strong>不要勾选Cookie模式</strong>）</li><li>在域名输入<strong><a href="https://wx4.sinaimg.cn" target="_blank" rel="noopener">https://wx4.sinaimg.cn</a></strong></li></ol><p><em>注意</em>：如果发现无法上传将域名上学wx4中的4+1，后续以此类推</p>]]></content>
-    
-    
-    <categories>
-      
-      <category>软件</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>图床</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>Typecho后台美化</title>
     <link href="/2020/06/19/Typecho-admin/"/>
     <url>/2020/06/19/Typecho-admin/</url>
@@ -121,6 +121,31 @@
     <tags>
       
       <tag>typecho</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Upic微博图床配置</title>
+    <link href="/2020/06/19/Upic-weibo/"/>
+    <url>/2020/06/19/Upic-weibo/</url>
+    
+    <content type="html"><![CDATA[<p>使用Upic 配置微博图床</p><a id="more"></a><h1 id="Upic-配置微博图床"><a href="#Upic-配置微博图床" class="headerlink" title="Upic 配置微博图床"></a>Upic 配置微博图床</h1><blockquote><p>Upic官方的配置说明有些问题，这里进行一些修改。</p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/underthestars-zhy/uPic@master/uPic/Xnip2020-06-19_20-26-07.png" srcset="/img/loading.gif" alt=""></p><ol><li>在配置界面输入用户名与密码（<strong>不要勾选Cookie模式</strong>）</li><li>在域名输入<strong><a href="https://wx4.sinaimg.cn" target="_blank" rel="noopener">https://wx4.sinaimg.cn</a></strong></li></ol><p><em>注意</em>：如果发现无法上传将域名上学wx4中的4+1，后续以此类推</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>软件</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>图床</tag>
       
     </tags>
     
