@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>Plaython</title>
+    <link href="/2020/09/19/Plaython%20#1/"/>
+    <url>/2020/09/19/Plaython%20#1/</url>
+    
+    <content type="html"><![CDATA[<h2 id="What-is-python"><a href="#What-is-python" class="headerlink" title="What is python"></a>What is python</h2><blockquote><p>Wiki: Python（英国发音：/ˈpaɪθən/ 美国发音：/ˈpaɪθɑːn/）是一种广泛使用的解释型、高级编程、通用型编程语言，由吉多·范罗苏姆创造，第一版发布于1991年。Python是ABC语言的后继者，也可以视之为一种使用传统中缀表达式（英语：M-expression）的LISP方言。Python的设计哲学强调代码的可读性和简洁的语法（尤其是使用空格缩进划分代码块，而非使用大括号或者关键词）。相比于C+ +或Java，Python让开发者能够用更少的代码表达想法。不管是小型还是大型程序，该语言都试图让程序的结构清晰明了。</p></blockquote><p>简单来说，python就是一款简单的编程语言，底端语言是<strong>C</strong>，所以运行比较快速。<br>目前，python已经被加入中学生计算机课程，所以学好它还是比较有用的。</p><h2 id="How-to-use-Python"><a href="#How-to-use-Python" class="headerlink" title="How to use Python"></a>How to use Python</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><ol><li>MacOS，前往<a href="https://python.org/downloads下载，系统自带3.6版本，和2.X版本" target="_blank" rel="noopener">https://python.org/downloads下载，系统自带3.6版本，和2.X版本</a></li><li>Windows，前往<a href="https://python.org/downloads下载" target="_blank" rel="noopener">https://python.org/downloads下载</a></li><li>Linux，一般系统自带，可以尝试运行相关命令检测</li></ol><h3 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h3><p>安装以后，会得到一个<strong>IDLE</strong>的软件。打开它。</p><div class="hljs"><pre><code class="hljs python">&gt;&gt;&gt;print(<span class="hljs-string">"Hello Python"</span>)</code></pre></div><p>输入以上内容，回车，会得到</p><div class="hljs"><pre><code class="hljs python">Hello Python</code></pre></div><p>在这个上面，&gt;&gt;&gt;是运行符号，代码都在这个后面运行。</p><h3 id="写"><a href="#写" class="headerlink" title="写"></a>写</h3><p>在上方找到<strong>New File</strong>，新建，输入：</p><div class="hljs"><pre><code class="hljs python">print(<span class="hljs-string">"First File"</span>)</code></pre></div><p>然后保存，再按下F5（Windows）运行<br>页面会跳转到<strong>IDLE</strong>，出现：</p><div class="hljs"><pre><code class="hljs python">First File</code></pre></div><h3 id="第三方客户端"><a href="#第三方客户端" class="headerlink" title="第三方客户端"></a>第三方客户端</h3><p>我比较推荐<strong>Pychram</strong>，本教程所有程序都用它来运行。<br><img src="https://cdn.jsdelivr.net/gh/s-cloud-bk/Upic@master/uPic/Xnip2020-09-18_23-43-26.png" srcset="/img/loading.gif" alt=""></p><h2 id="Best-way-to-write"><a href="#Best-way-to-write" class="headerlink" title="Best way to write"></a>Best way to write</h2><p>写一个好的代码，不仅要让自己看得懂，还有让<strong>别人</strong>看得懂，所以我们需要良好的编程规范。<br>在后续章节我会具体介绍一些规范。</p><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ol><li>Python从入门到精通</li><li><a href="https://python.org" target="_blank" rel="noopener">https://python.org</a></li><li>Wiki- python</li><li>Baidu- python</li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>编程</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Python</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Typecho文章自定义字体CSS</title>
     <link href="/2020/08/12/Typecho-articlefont-css/"/>
     <url>/2020/08/12/Typecho-articlefont-css/</url>
