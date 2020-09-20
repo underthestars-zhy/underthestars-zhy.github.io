@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>Plathon2-变量</title>
+    <link href="/2020/09/20/Plaython2/"/>
+    <url>/2020/09/20/Plaython2/</url>
+    
+    <content type="html"><![CDATA[<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><p>简单来说，变量是<strong>可变的量</strong>，与其对应的是<strong>常量</strong>，像pie就是常量，数学里设的未知数x就是变量。</p><p>在python中变量的创建方式是这样的：</p><div class="hljs"><pre><code class="hljs python">&gt;&gt;&gt;a = <span class="hljs-number">1</span>&gt;&gt;&gt;a<span class="hljs-number">1</span></code></pre></div><p>这样叫做<strong>赋值</strong>，当然可以连续赋值：</p><div class="hljs"><pre><code class="hljs python">&gt;&gt;&gt;a = b = c = <span class="hljs-number">1</span>&gt;&gt;&gt;a<span class="hljs-number">1</span>&gt;&gt;&gt;b<span class="hljs-number">1</span>&gt;&gt;&gt;c<span class="hljs-number">1</span></code></pre></div><p>如上所示，a，b，c都被赋值了1，这种方式与</p><div class="hljs"><pre><code class="hljs python">&gt;&gt;&gt;a = <span class="hljs-number">1</span>&gt;&gt;&gt;b = <span class="hljs-number">1</span>&gt;&gt;&gt;c = <span class="hljs-number">1</span></code></pre></div><p>是等价的。</p><p><strong>注意</strong>：必须要先赋值再调用，不然会报错。</p><h2 id="变量的值"><a href="#变量的值" class="headerlink" title="变量的值"></a>变量的值</h2><p>变量可以赋的值有好多种，下面简单介绍一下。</p><h3 id="数字"><a href="#数字" class="headerlink" title="数字"></a>数字</h3><div class="hljs"><pre><code class="hljs python">&gt;&gt;&gt;a = <span class="hljs-number">1</span></code></pre></div><p>上面的 <strong>1</strong> 就是数字，类型为int。</p><h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><div class="hljs"><pre><code class="hljs python">&gt;&gt;&gt;a = <span class="hljs-string">"Hello"</span>&gt;&gt;&gt;b = <span class="hljs-string">'Hi'</span></code></pre></div><p>上面的 <strong>Hello</strong>和<strong>hi</strong> 都是字符串，字符串两边需要加<strong>单引号或者双引号</strong>，类型为str。</p><h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><div class="hljs"><pre><code class="hljs python">&gt;&gt;&gt;a = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>]</code></pre></div><p>列表用<strong>大括号</strong>来表示，类型为lst</p><h3 id="字典"><a href="#字典" class="headerlink" title="字典"></a>字典</h3><div class="hljs"><pre><code class="hljs python">&gt;&gt;&gt;a = (<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>)</code></pre></div><p>字典与列表非常相似，稍有不同，使用<strong>小括号</strong>表示，类型为dic</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>编程</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Python</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Plaython1</title>
     <link href="/2020/09/19/Plaython1/"/>
     <url>/2020/09/19/Plaython1/</url>

@@ -19,10 +19,23 @@
   <meta name="description" content="">
   <meta name="author" content="zhy">
   <meta name="keywords" content="">
-  <title>归档 - UTS</title>
+  <title>Plathon2-变量 - UTS</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/an-old-hope.min.css" />
+    
+  
+
+  
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
@@ -45,7 +58,7 @@
 
 
 <body>
-  <header style="height: 60vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -161,6 +174,43 @@
             </span>
 
             
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2020-09-20 10:13" pubdate>
+        2020年9月20日 上午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      292 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      3
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
           </div>
 
           
@@ -171,43 +221,145 @@
 
   <main>
     
-      <div class="container nopadding-md">
-        <div class="py-5" id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<div class="list-group">
-  <p class="h4">共计 9 篇文章</p>
-  <hr>
-  
-    
       
-      <p class="h5">2020</p>
-    
-    <a href="/2020/08/12/Typecho-articlefont-css/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">Typecho文章自定义字体CSS</span>
-      <time style="float: right;">08-12</time>
-    </a>
-  
-    
-    <a href="/2020/08/12/Typecho-articlefont/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">Typecho修改文章字体</span>
-      <time style="float: right;">08-12</time>
-    </a>
-  
-</div>
 
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto" id="post">
+            <!-- SEO header -->
+            <h1 style="display: none">Plathon2-变量</h1>
+            
+            <div class="markdown-body" id="post-body">
+              <h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><p>简单来说，变量是<strong>可变的量</strong>，与其对应的是<strong>常量</strong>，像pie就是常量，数学里设的未知数x就是变量。</p>
+<p>在python中变量的创建方式是这样的：</p>
+<div class="hljs"><pre><code class="hljs python">&gt;&gt;&gt;a = <span class="hljs-number">1</span>
+&gt;&gt;&gt;a
+<span class="hljs-number">1</span></code></pre></div>
+<p>这样叫做<strong>赋值</strong>，当然可以连续赋值：</p>
+<div class="hljs"><pre><code class="hljs python">&gt;&gt;&gt;a = b = c = <span class="hljs-number">1</span>
+&gt;&gt;&gt;a
+<span class="hljs-number">1</span>
+&gt;&gt;&gt;b
+<span class="hljs-number">1</span>
+&gt;&gt;&gt;c
+<span class="hljs-number">1</span></code></pre></div>
+<p>如上所示，a，b，c都被赋值了1，这种方式与</p>
+<div class="hljs"><pre><code class="hljs python">&gt;&gt;&gt;a = <span class="hljs-number">1</span>
+&gt;&gt;&gt;b = <span class="hljs-number">1</span>
+&gt;&gt;&gt;c = <span class="hljs-number">1</span></code></pre></div>
+<p>是等价的。</p>
+<p><strong>注意</strong>：必须要先赋值再调用，不然会报错。</p>
+<h2 id="变量的值"><a href="#变量的值" class="headerlink" title="变量的值"></a>变量的值</h2><p>变量可以赋的值有好多种，下面简单介绍一下。</p>
+<h3 id="数字"><a href="#数字" class="headerlink" title="数字"></a>数字</h3><div class="hljs"><pre><code class="hljs python">&gt;&gt;&gt;a = <span class="hljs-number">1</span></code></pre></div>
+<p>上面的 <strong>1</strong> 就是数字，类型为int。</p>
+<h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><div class="hljs"><pre><code class="hljs python">&gt;&gt;&gt;a = <span class="hljs-string">"Hello"</span>
+&gt;&gt;&gt;b = <span class="hljs-string">'Hi'</span></code></pre></div>
+<p>上面的 <strong>Hello</strong>和<strong>hi</strong> 都是字符串，字符串两边需要加<strong>单引号或者双引号</strong>，类型为str。</p>
+<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><div class="hljs"><pre><code class="hljs python">&gt;&gt;&gt;a = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>]</code></pre></div>
+<p>列表用<strong>大括号</strong>来表示，类型为lst</p>
+<h3 id="字典"><a href="#字典" class="headerlink" title="字典"></a>字典</h3><div class="hljs"><pre><code class="hljs python">&gt;&gt;&gt;a = (<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>)</code></pre></div>
+<p>字典与列表非常相似，稍有不同，使用<strong>小括号</strong>表示，类型为dic</p>
 
-
-              </div>
             </div>
-          </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E7%BC%96%E7%A8%8B/">编程</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/Python/">Python</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2020/09/19/Plaython1/">
+                        <span class="hidden-mobile">Plaython1</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments">
+                
+                
+  <div id="vcomments"></div>
+  <script type="text/javascript">
+    function loadValine() {
+      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
+        new Valine({
+          el: "#vcomments",
+          app_id: "u1cKmJopiMDcV27ug9DHFKfe-gzGzoHsz",
+          app_key: "5nRkBaOrTUyxRDGEQLD1kS0n",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: true,
+          serverURLs: "https://u1ckmjop.lc-cn-n1-shared.com",
+        });
+      });
+    }
+    waitElementVisible('vcomments', loadValine);
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://valine.js.org" target="_blank" rel="nofollow noopener noopener">comments
+      powered by Valine.</a></noscript>
+
+
+              </article>
+            
+          </article>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
   </main>
 
@@ -315,6 +467,31 @@
 
 
 
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '#post-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
 
 
   <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
@@ -322,7 +499,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "归档&nbsp;",
+        "Plathon2-变量&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
@@ -337,6 +514,21 @@
 
 
 
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
 
 
   <script  src="/js/local-search.js" ></script>
@@ -350,6 +542,20 @@
   </script>
 
 
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
 
 
 
